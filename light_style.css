@@ -1,0 +1,61 @@
+body {
+    background-color: var(--light-grey);
+}
+.dark {
+    display: none !important;
+}
+@media (max-width: 767px) {
+    nav ul {
+        background-color: var(--white);
+    }
+}
+nav ul li a {
+    color: var(--grey);
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--dark-grey);
+}
+nav  .toggle-theme {
+    background-color: var(--dark-grey);
+}
+nav .toggle-theme button {
+    background-color: var(--dark-grey);
+}
+nav .toggle-theme button:not(.dark) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .toggle-theme button.light:has(i) {
+    background-color: var(--light-grey);
+}
+nav .toggle-theme button i {
+    font-size: 20px;
+    color: var(--dark-grey);
+}
+nav .toggle-menu i {
+    color: var(--grey);
+}
+main .info .face {
+    color: var(--dark-grey);
+}
+main .info h1 {
+    color: var(--dark-grey);
+}
+main .info p {
+    color: var(--grey);
+}
+main .info .btns button {
+    color: var(--white);
+    background-color: var(--blue);
+}
+main .info .btns a {
+    color: var(--blue);
+}
+main .info .btns a::before {
+    background-color: var(--blue);
+}
+main .info .check span {
+    color: var(--grey);
+}

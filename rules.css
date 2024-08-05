@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --blue: #2A4DD0;
+    --green: #4CA154;
+    --very-dark-grey:#111729;
+    --dark-grey: #223344;
+    --grey: #909193;
+    --light-grey: #F2F9FE;
+    --white: #fff;
+
+    --family: "Poppins", sans-serif;
+
+    --big-text: 60px;
+    --body-size: 18px;
+    --botton-size: 16px;
+    --small-text: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--body-size);
+    font-family: var(--family);
+    padding: 40px 80px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (min-width: 768px) {
+    nav ul {
+        display: flex !important;
+    }
+}
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        padding: 30px;
+    }
+}
+nav ul {
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li a {
+    display: block;
+    font-size: var(--small-text);
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .3s linear;
+}
+@media (max-width: 767px) {
+    nav  .toggle-theme {
+        display: none !important;
+    }
+}
+nav  .toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    height: 34px;
+    gap: 3px;
+    border-radius: 30px;
+}
+nav .toggle-theme button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media (min-width: 768px) {
+    nav .toggle-menu {
+        display: none;
+    }
+}
+nav .toggle-menu {
+    cursor: pointer;
+}
+nav .toggle-menu .menu {
+    display: block;
+}
+nav .toggle-menu .close {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1111;
+}
+nav .toggle-menu i {
+    font-size: 20px;
+}
+@media (min-width: 1200px) {
+    main > div  {
+        width: calc(50% - 30px) !important;
+    }
+}
+@media (max-width: 1199px) {
+    main .illus {
+        order: 1;
+    }
+    main .info {
+        order: 2;
+    }
+}
+main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main > div {
+    width: 100%;
+}
+main .info .face {
+    font-size: var(--body-size);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+@media (max-width: 520px) {
+    main .info h1 {
+        font-size: 40px !important;
+    }
+}
+main .info h1 {
+    font-size: var(--big-text);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .info p {
+    font-size: var(--body-size);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+main .info .btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+main .info .btns button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    font-size: var(--botton-size);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+main .info .btns a {
+    padding: 15px 0;
+    display: block;
+    width: fit-content;
+    font-size: var(--botton-size);
+    font-weight: 600;
+    position: relative;
+}
+main .info .btns a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 2px;
+    transition: .3s;
+}
+main .info .check {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+main .info .check div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .info .check span {
+    font-size: var(--small-text);
+}
+main .illus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .illus img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
